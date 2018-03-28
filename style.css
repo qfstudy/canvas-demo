@@ -1,0 +1,84 @@
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+html, body {
+    width:  100%;
+    height: 100%;
+    margin: 0px;
+   }
+body{
+  overflow: hidden;
+}
+ul,ol{
+    list-style: none;
+    padding: 0; 
+}
+#canvas{
+    background: white;
+    display: block;
+    position: relative;
+}
+#div1{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.colors{
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    background: white;
+  }
+  .colors> li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    margin: 10px 0;
+    transition: all 0.3s;
+  }
+  .colors> li.red{
+    background: red;
+  }
+  .colors> li.green{
+    background: green;
+  }
+  .colors> li.blue{
+    background: blue;
+  }
+  .colors> li.black{
+    background: black;
+  }
+  .colors> li.yellow{
+    background: yellow;
+  }
+  .colors> li.greenyellow{
+    background: greenyellow;
+  }
+  .colors> li.active{
+    box-shadow: 0 0 3px rgba(0,0,0,0.95);
+    transform: scale(1.2);
+  }
+  .sizes {
+    position: fixed;
+    right: 10px;
+    top: 4px;
+  }
+  .sizes > li {
+    margin: 10px 0;
+  }
+  .sizes > .thin{
+    height: 0;
+    width: 16px;
+    border-top: 2px solid black;
+  }
+  .sizes > .thick{
+    height: 0;
+    width: 16px;
+    border-top: 4px solid black;
+  }
